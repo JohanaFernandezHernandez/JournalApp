@@ -13,6 +13,7 @@ export const starNewNote = () => {
         const newNote = {
             title: '',
             body: '',
+            imageUrls:[],
             date: new Date().getTime()
         }
 
@@ -88,10 +89,6 @@ export const starUpLoadingFiles = (files = []) => {
         await deleteDoc( docRef);
 
         dispach( deleteNoteById(note.id));
-
-        
-
         
     }
-
  };
